@@ -1,0 +1,28 @@
+/* Additional Custom Styles */
+.game {
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.game img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.game h3 {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.game:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
+  background-color: #000;
+}

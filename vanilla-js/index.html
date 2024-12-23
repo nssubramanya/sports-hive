@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sports Webpage</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="assets/images/logo.jpg"
+            alt="Sports Logo"
+            style="width: 100px; height: 50px"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="sportsDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Sports
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="sportsDropdown">
+                <li>
+                  <a class="dropdown-item" href="cricket.html">Cricket</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Athletics (Track & Field)</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="#">Badminton</a></li>
+                <li><a class="dropdown-item" href="#">Basketball</a></li>
+                <li><a class="dropdown-item" href="#">Boxing</a></li>
+                <li><a class="dropdown-item" href="#">F1 Motorsport</a></li>
+                <li><a class="dropdown-item" href="#">Football</a></li>
+                <li><a class="dropdown-item" href="#">Swimming</a></li>
+                <li><a class="dropdown-item" href="#">Tennis</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="quiz.html">Quiz</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Carousel Section -->
+    <div id="sportsCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="assets/images/cricket/cricket.jpg"
+            class="d-block w-100"
+            alt="Cricket"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="assets/images/hockey/hockey.webp"
+            class="d-block w-100"
+            alt="Hockey"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="assets/images/tennis/tennis.webp"
+            class="d-block w-100"
+            alt="Tennis"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="assets/images/basketball/basketball.jpeg"
+            class="d-block w-100"
+            alt="Basketball"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="assets/images/football/football.webp"
+            class="d-block w-100"
+            alt="Football"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#sportsCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#sportsCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Games Section -->
+    <div class="container py-5">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="game card" onclick="location.href='cricket.html'">
+            <img
+              src="assets/images/cricket/cricket.jpg"
+              class="card-img-top"
+              alt="Cricket"
+            />
+            <div class="card-body">
+              <h3 class="card-title">Cricket</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="game card" onclick="location.href='athletics.html'">
+            <img
+              src="https://via.placeholder.com/300x200?text=Athletics"
+              class="card-img-top"
+              alt="Athletics"
+            />
+            <div class="card-body">
+              <h3 class="card-title">Athletics (Track & Field)</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="game card" onclick="location.href='badminton.html'">
+            <img
+              src="https://via.placeholder.com/300x200?text=Badminton"
+              class="card-img-top"
+              alt="Badminton"
+            />
+            <div class="card-body">
+              <h3 class="card-title">Badminton</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="game card" onclick="location.href='basketball.html'">
+            <img
+              src="assets/images/basketball/basketball.jpeg"
+              class="card-img-top"
+              alt="Basketball"
+            />
+            <div class="card-body">
+              <h3 class="card-title">Basketball</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="game card" onclick="location.href='boxing.html'">
+            <img
+              src="https://via.placeholder.com/300x200?text=Boxing"
+              class="card-img-top"
+              alt="Boxing"
+            />
+            <div class="card-body">
+              <h3 class="card-title">Boxing</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="game card" onclick="location.href='f1.html'">
+            <img
+              src="https://via.placeholder.com/300x200?text=F1+Motorsport"
+              class="card-img-top"
+              alt="F1 Motorsport"
+            />
+            <div class="card-body">
+              <h3 class="card-title">F1 Motorsport</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="game card" onclick="location.href='football.html'">
+            <img
+              src="assets/images/football/football.webp"
+              class="card-img-top"
+              alt="Football"
+            />
+            <div class="card-body">
+              <h3 class="card-title">Football</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="game card" onclick="location.href='swimming.html'">
+            <img
+              src="https://via.placeholder.com/300x200?text=Swimming"
+              class="card-img-top"
+              alt="Swimming"
+            />
+            <div class="card-body">
+              <h3 class="card-title">Swimming</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="game card" onclick="location.href='tennis.html'">
+            <img
+              src="assets/images/tennis/tennis.webp"
+              class="card-img-top"
+              alt="Tennis"
+            />
+            <div class="card-body">
+              <h3 class="card-title">Tennis</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Name</h5>
+                <p class="card-text">Email: name@example.com<br />ID: 12345</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Name</h5>
+                <p class="card-text">Email: name2@example.com<br />ID: 67890</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
